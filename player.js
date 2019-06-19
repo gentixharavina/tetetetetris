@@ -66,6 +66,7 @@ class Player
                 return;
             }
         }
+        
     }
 
     _rotateMatrix(matrix, dir)

@@ -3,15 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>tetetetetete tris</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="style.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -19,19 +17,22 @@
 
 <body>
   <div class="player">
-      <div class="score"></div>
       <canvas class="tetris" width="240" height="400"></canvas>
+      <div class="score"></div>
+  </div>
+  <div id="high-score"></div>
+  <div class="player">
+      <canvas class="tetris" width="240" height="400"></canvas>
+      <div class="score"></div>
   </div>
 
-  <div class="player">
-      <div class="score"></div>
-      <canvas class="tetris" width="240" height="400"></canvas>
-  </div>
 
   <script src="arena.js"></script>
   <script src="player.js"></script>
   <script src="tetris.js"></script>
   <script src="main.js"></script>
+  
+
 </body>
 
 </html>

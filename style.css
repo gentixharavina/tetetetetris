@@ -9,9 +9,17 @@ body {
 
 .player {
   flex: 1 1 auto;
+  padding-top: 3em;
 }
 
 canvas {
   border: solid .2em #fff;
   height: 78vh;
+}
+#text {
+  text-align: center;
+}
+#high-score {
+  text-align: center;
+  display: flex;
 }

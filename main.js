@@ -1,5 +1,3 @@
-var localStorageName = 'alien';
-var highScore;
 
 function createPiece(type)
 {

@@ -6,7 +6,6 @@ class Tetris {
         this.context = this.canvas.getContext('2d');
         this.context.scale(20, 20);
 
-        
         this.arena = new Arena(12, 20);
         this.player = new Player(this);
 
@@ -58,5 +57,19 @@ class Tetris {
 
     updateScore(score) {
       this.element.querySelector('.score').innerText = score;
+      this.highScore(score);
+    }
+    
+    highScore(score) {
+        let highScore = localStorage.getItem('High Score');
+        if( highScore >= score) {
+            localStorage.setItem('High Score', highScore);
+            document.getElementById('high-score').innerHTML = 'High Score is ' + highScore;
+        } else {
+            highScore = score;
+            localStorage.setItem('High Score', highScore);
+        }
+      
+        console.log(highScore);
     }
 }
